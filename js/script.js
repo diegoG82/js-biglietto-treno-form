@@ -16,15 +16,13 @@
 // Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui l’utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo.
 // Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 
-
 // MILESTONE 1
 
 // const submitBtn = document.getElementById("submit-btn");
 // submitBtn.addEventListener("click", function()  {
 
 //     const ticketPrice = document.getElementById("price");
- 
-   
+
 //    const distanceToRun = document.getElementById("distance");
 //    const distance = distanceToRun.value;
 
@@ -34,87 +32,72 @@
 //     let price = distance * 0.21
 //     console.log (price)
 
-
 //     if  (age < 18){
 //         price -=  (price * 20 / 100);
-//     } 
-   
+//     }
+
 //     else if (age >= 65){
 //         price -= (price * 40 / 100);
 //     }
-
-   
 
 //     result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`
 
 // })
 
-
 // MILESTONE 2
 
-
 const submitBtn = document.getElementById("generate");
-submitBtn.addEventListener("click", function()  {
+submitBtn.addEventListener("click", function () {
+  const ticketPrice = document.getElementById("price");
 
-    const ticketPrice = document.getElementById("price");
- 
-   // Prendere il valore del input.
-   let distanceToRun = document.getElementById("distance");
-   let distance = distanceToRun.value;
+  // Prendere il valore del input.
+  let distanceToRun = document.getElementById("distance");
+  let distance = distanceToRun.value;
 
-   let ageofUser = document.getElementById("fascia_eta");
-   let age = ageofUser.value;
+  let ageofUser = document.getElementById("fascia_eta");
+  let age = ageofUser.value;
 
-    let price = distance * 0.21
-    console.log (price)
+  let price = distance * 0.21;
+  console.log(price);
 
-    if (age === "Minorenne"){
-        price -= (price * 20 / 100);
+  if (age === "Minorenne") {
+    price -= (price * 20) / 100;
+  } else if (age === "Senior") {
+    price -= (price * 40) / 100;
+  }
 
-    }else if (age === "Senior"){
-        price -= (price * 40 / 100);
-    }
+  // NAME
+  let username = document.getElementById("user");
+  let name = username.value;
 
-    // NAME
-    let username = document.getElementById("user");
-    let name = username.value;
+  // CARRIAGE
+  let carriage = Math.floor(Math.random() * 9) + 1;
+  let carriageNumber = carriage.valueOf;
+  console.log(carriage);
 
-    // PRICE RANGE
+  // CP CODE
+  let cpcode = Math.floor(Math.random() * (100000 - 90000 + 1)) + 90000;
+  let cpcodeNumber = cpcode.valueOf;
 
+  //OUTPUT
 
-
-    // CARRIAGE
-    let carriage = Math.floor(Math.random() * 9) +1;
-    let carriageNumber = carriage.valueOf;
-    console.log(carriage)
-
-    // CP CODE
-    let cpcode = Math.floor(Math.random() * (100000 - 90000 + 1 )) + 90000;
-    let cpcodeNumber = cpcode.valueOf;
-
-    //OUTPUT
-
-    passenger.innerHTML = name;
-    pricerange.innerHTML = age;
-    carrozza.innerHTML = carriage;
-    cp_code.innerHTML = cpcode;
-    result.innerHTML = `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
-    
-
+  passenger.innerHTML = name;
+  pricerange.innerHTML = age;
+  carrozza.innerHTML = carriage;
+  cp_code.innerHTML = cpcode;
+  result.innerHTML = `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
 });
-
 
 // PULIZIA CAMPI TABELLA OUTPUT BOTTONE CANCEL
 let cancelBtn = document.getElementById("cancel");
-cancelBtn.addEventListener("click", function()  {
+cancelBtn.addEventListener("click", function () {
+  document.getElementById("user").value = "";
+  document.getElementById("distance").value = "";
+  document.getElementById("fascia_eta").value = "";
 
-    document.getElementById("user").value ="";
-    document.getElementById("distance").value="";
-    document.getElementById("fascia_eta").value="";
-
-    passenger.innerHTML = "";
-    pricerange.innerHTML = "";
-    carrozza.innerHTML = "";
-    cp_code.innerHTML = "";
-    result.innerHTML = "";
-})
+  passenger.innerHTML = "";
+  pricerange.innerHTML = "";
+  carrozza.innerHTML = "";
+  cp_code.innerHTML = "";
+  result.innerHTML = "";
+});

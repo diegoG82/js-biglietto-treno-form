@@ -1,77 +1,77 @@
-.biglietto{
-    width: 1000px;
-    height: 700px;
-    background-image: url(../img/train.jpg);
-    background-size: cover;
-    background-position: center;
-    margin:100px auto;
-    border: 5px solid goldenrod;
-    text-decoration: solid;
+.biglietto {
+  width: 1000px;
+  height: 700px;
+  background-image: url(../img/train.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 100px auto;
+  border: 5px solid goldenrod;
+  text-decoration: solid;
 }
 
-.ticket-title{
-    color:goldenrod;
-    text-align: center;
-    padding-top:10px;
+.ticket-title {
+  color: goldenrod;
+  text-align: center;
+  padding-top: 10px;
 }
 
-h5, p, label{
-    color: goldenrod;
-    font-style: oblique;
-    font-weight: 999;
+h5, 
+p,
+label {
+  color: goldenrod;
+  font-style: oblique;
+  font-weight: 999;
 }
 
-button{
-    border:1px solid goldenrod;
-    margin:5px;
-    color:goldenrod;
-    background-color: rgba(0, 0, 0, 0.279);
-    padding:10px;
-    font-style: oblique;
+button {
+  border: 1px solid goldenrod;
+  margin: 5px;
+  color: goldenrod;
+  background-color: rgba(0, 0, 0, 0.279);
+  padding: 10px;
+  font-style: oblique;
 }
 
-
-.dati-utente{   
-    width:800px;
-    height:250px;
-    background:rgba(0, 0, 0, 0.250);
-    margin:0 auto;
-    border: 5px solid goldenrod;
+.dati-utente {
+  width: 800px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  border: 5px solid goldenrod;
 }
 
-.dati-utente h3{
-    text-align: center;
-    padding-top: 20px;
-    color: goldenrod;
+.dati-utente h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: goldenrod;
 }
 
-.row{
-    display: flex;
-    justify-content: center;
+.row {
+  display: flex;
+  justify-content: center;
 }
 
-.second{
-    justify-content: center;
-    padding-top: 20px;
+.second {
+  justify-content: center;
+  padding-top: 20px;
 }
 
-
-.col{
-    border:1px solid goldenrod; 
-    text-align: center;
-    margin:5px;
-    background-color: rgba(0, 0, 0, 0.250);
+.col {
+  border: 1px solid goldenrod;
+  text-align: center;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.bottom{
-    justify-content: center;
+.bottom {
+  justify-content: center;
 }
-.col_bottom{
-    width: 150px;
-    height:120px;
-    border:1px solid goldenrod;
-    margin:0 5px;
-    text-align: center;
-    padding:5px;
-    background-color: rgba(0, 0, 0, 0.250);
+.col_bottom {
+  width: 150px;
+  height: 120px;
+  border: 1px solid goldenrod;
+  margin: 0 5px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
