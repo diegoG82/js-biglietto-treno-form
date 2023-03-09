@@ -1,12 +1,13 @@
 .biglietto{
     width: 1200px;
-    height: 800px;
-    background: rgb(185, 20, 80) ;
+    height: 600px;
+    background: rgb(15, 202, 99) ;
     margin:100px auto;
+    border: 2px solid rgb(82, 47, 255)
 }
 
 .ticket-title{
-    color:white;
+    color:rgb(255, 255, 255);
     text-align: center;
     padding-top:10px;
 }
@@ -14,9 +15,10 @@
 
 .dati-utente{
     width:800px;
-    height:300px;
-    background:white;
+    height:200px;
+    background:rgb(158, 155, 155);
     margin:0 auto;
+    border: 1px solid black;
 }
 
 .dati-utente h3{
@@ -26,8 +28,14 @@
 
 .row{
     display: flex;
-    
 }
+
+.second{
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
 .col{
     border:1px solid black; 
     text-align: center;

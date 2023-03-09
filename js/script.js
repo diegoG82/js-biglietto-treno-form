@@ -68,10 +68,10 @@ submitBtn.addEventListener("click", function()  {
     let price = distance * 0.21
     console.log (price)
 
-    if (age === "minorenne"){
+    if (age === "Minorenne"){
         price -= (price * 20 / 100);
 
-    }else if (age === "senior"){
+    }else if (age === "Senior"){
         price -= (price * 40 / 100);
     }
 
@@ -101,10 +101,16 @@ submitBtn.addEventListener("click", function()  {
     result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`;
     
 
-     
-
-
-
-
-    
 });
+
+
+// PULIZIA CAMPI TABELLA OUTPUT BOTTONE CANCEL
+const cancelBtn = document.getElementById("cancel");
+cancelBtn.addEventListener("click", function()  {
+
+    passenger.innerHTML = "";
+    pricerange.innerHTML = "";
+    carrozza.innerHTML = "";
+    cp_code.innerHTML = "";
+    result.innerHTML = "";
+})
