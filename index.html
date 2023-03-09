@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Struttura semplice x milestone 1 -->
+
+
+    <!-- Struttura semplice x milestone 1
 
     <div>
       <label for="Distance">Distance</label>
@@ -20,11 +22,75 @@
       <input type="text" id="age" />
 
       <button id="submit-btn">Submit</button>
-    </div>
 
+      <h2 id="result"></h2>
+    </div> -->
+
+    <!-- CONTAINER MILESTONE 2 -->
     <div class="biglietto">
-      <h2 id="price"></h2>
-      <div id="n"></div>
+      <!-- TITLE 1     -->
+      <h2 class="ticket-title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+      <!-- FIRST CONTAINER -->
+      <div class="dati-utente">
+        <div class="row">
+          <div class="col">
+            <label for="User">Nome Cognome</label>
+            <input id="user" type="text" placeholder="Inserire nome" />
+          </div>
+
+          <div class="col">
+            <label for="distance">Km da percorrere</label>
+            <input id="distance" type="text" placeholder="chilometri da fare" />
+          </div>
+
+          <div class="col">
+            <label for="age">Fascia d'eta'</label>
+            <select id="fascia_eta">
+              <option value="Minorenne">Minorenne</option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Senior">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <!-- /FIRST ROW -->
+
+        <!-- SECOND ROW -->
+        <div class="row">
+          <button id="generate" class="btn">Generate</button>
+          <button id="cancel" class="btn">Cancel</button>
+        </div>
+      </div>
+
+      <h2 class="ticket-title">IL TUO BIGLIETTO</h2>
+
+      <!-- SECOND CONTAINER -->
+      <div class="dati-utente">
+        <h3>DETTAGLIO PASSEGGERI</h3>
+
+        <div class="row bottom">
+          <div class="col">
+            <h5>Nome passeggero</h5>
+            <p id="passenger"></p>
+          </div>
+          <div class="col">
+            <h5>Offerta</h5>
+            <p id="pricerange"></p>
+        </div>
+          <div class="col">
+            <h5>Carrozza</h5>
+            <p id="carrozza"></p>
+
+        </div>
+          <div class="col"><h5>Codice CP</h5>
+            <p id="cp_code"></p>
+        </div>
+          <div class="col">
+            <h5>Costo biglietto</h5>
+            <h6 id="result"></h6>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- /Struttura semplice x milestone 1 -->

@@ -1,0 +1,39 @@
+.biglietto{
+    width: 1200px;
+    height: 800px;
+    background: rgb(185, 20, 80) ;
+    margin:100px auto;
+}
+
+.ticket-title{
+    color:white;
+    text-align: center;
+    padding-top:10px;
+}
+
+
+.dati-utente{
+    width:800px;
+    height:300px;
+    background:white;
+    margin:0 auto;
+}
+
+.dati-utente h3{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.row{
+    display: flex;
+    
+}
+.col{
+    border:1px solid black; 
+    text-align: center;
+    margin:5px;
+}
+
+.bottom{
+    justify-content: center;
+}

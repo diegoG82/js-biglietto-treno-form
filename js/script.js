@@ -17,33 +17,94 @@
 // Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 
 
-// AZIONE DEL BOTTONE SUBMIT
-const submitBtn = document.getElementById("submit-btn");
+// MILESTONE 1
+
+// const submitBtn = document.getElementById("submit-btn");
+// submitBtn.addEventListener("click", function()  {
+
+//     const ticketPrice = document.getElementById("price");
+ 
+   
+//    const distanceToRun = document.getElementById("distance");
+//    const distance = distanceToRun.value;
+
+//    let ageofUser = document.getElementById("age");
+//    let age = ageofUser.value;
+
+//     let price = distance * 0.21
+//     console.log (price)
+
+
+//     if  (age < 18){
+//         price -=  (price * 20 / 100);
+//     } 
+   
+//     else if (age >= 65){
+//         price -= (price * 40 / 100);
+//     }
+
+   
+
+//     result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`
+
+// })
+
+
+// MILESTONE 2
+
+
+const submitBtn = document.getElementById("generate");
 submitBtn.addEventListener("click", function()  {
 
     const ticketPrice = document.getElementById("price");
  
    // Prendere il valore del input.
-   const distanceToRun = document.getElementById("distance");
-   const distance = distanceToRun.value;
+   let distanceToRun = document.getElementById("distance");
+   let distance = distanceToRun.value;
 
-   let ageofUser = document.getElementById("age");
+   let ageofUser = document.getElementById("fascia_eta");
    let age = ageofUser.value;
 
     let price = distance * 0.21
     console.log (price)
 
+    if (age === "minorenne"){
+        price -= (price * 20 / 100);
 
-    if  (age < 18){
-        price -=  (price * 20 / 100);
-    } 
-   
-    else if (age >= 65){
+    }else if (age === "senior"){
         price -= (price * 40 / 100);
     }
 
-    //output
+    // NAME
+    let username = document.getElementById("user");
+    let name = username.value;
 
-    result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`
+    // PRICE RANGE
 
-})
+
+
+    // CARRIAGE
+    let carriage = Math.floor(Math.random() * 9) +1;
+    let carriageNumber = carriage.valueOf;
+    console.log(carriage)
+
+    // CP CODE
+    let cpcode = Math.floor(Math.random() * (100000 - 90000 + 1 )) + 90000;
+    let cpcodeNumber = cpcode.valueOf;
+
+    //OUTPUT
+
+    passenger.innerHTML = name;
+    pricerange.innerHTML = age;
+    carrozza.innerHTML = carriage;
+    cp_code.innerHTML = cpcode;
+    result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`;
+    
+
+     
+
+
+
+
+    
+});
