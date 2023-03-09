@@ -98,15 +98,19 @@ submitBtn.addEventListener("click", function()  {
     pricerange.innerHTML = age;
     carrozza.innerHTML = carriage;
     cp_code.innerHTML = cpcode;
-    result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`;
+    result.innerHTML = `Il prezzo del biglietto è di: ${price.toFixed(2)}€`;
     
 
 });
 
 
 // PULIZIA CAMPI TABELLA OUTPUT BOTTONE CANCEL
-const cancelBtn = document.getElementById("cancel");
+let cancelBtn = document.getElementById("cancel");
 cancelBtn.addEventListener("click", function()  {
+
+    document.getElementById("user").value ="";
+    document.getElementById("distance").value="";
+    document.getElementById("fascia_eta").value="";
 
     passenger.innerHTML = "";
     pricerange.innerHTML = "";
