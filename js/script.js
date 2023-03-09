@@ -23,7 +23,6 @@ submitBtn.addEventListener("click", function()  {
 
     const ticketPrice = document.getElementById("price");
  
-
    // Prendere il valore del input.
    const distanceToRun = document.getElementById("distance");
    const distance = distanceToRun.value;
@@ -31,18 +30,20 @@ submitBtn.addEventListener("click", function()  {
    let ageofUser = document.getElementById("age");
    let age = ageofUser.value;
 
-    const prezzoDelBigliettoInt = distance * 0.21
-    console.log (prezzoDelBigliettoInt)
-    
+    let price = distance * 0.21
+    console.log (price)
+
 
     if  (age < 18){
-        price = (prezzoDelBigliettoInt * 20 / 100).toFixed(2);
+        price -=  (price * 20 / 100);
     } 
    
     else if (age >= 65){
-        price = (prezzoDelBigliettoInt * 40 / 100).toFixed(2);
+        price -= (price * 40 / 100);
     }
 
-    result.innerHTML = `Il prezzo del biglietto è ${prezzoDelBigliettoInt}€`
+    //output
+
+    result.innerHTML = `Il prezzo del biglietto è ${price.toFixed(2)}€`
 
 })
