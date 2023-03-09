@@ -1,33 +1,53 @@
 .biglietto{
     width: 1000px;
     height: 700px;
-    background: rgb(93, 139, 24);
+    background-image: url(../img/train.jpg);
+    background-size: cover;
+    background-position: center;
     margin:100px auto;
-    border: 2px solid rgb(0, 0, 0)
+    border: 5px solid goldenrod;
+    text-decoration: solid;
 }
 
 .ticket-title{
-    color:rgb(255, 255, 255);
+    color:goldenrod;
     text-align: center;
     padding-top:10px;
 }
 
+h5, p, label{
+    color: goldenrod;
+    font-style: oblique;
+    font-weight: 999;
+}
 
-.dati-utente{
+button{
+    border:1px solid goldenrod;
+    margin:5px;
+    color:goldenrod;
+    background-color: rgba(0, 0, 0, 0.279);
+    padding:10px;
+    font-style: oblique;
+}
+
+
+.dati-utente{   
     width:800px;
     height:250px;
-    background:rgb(251, 255, 252);
+    background:rgba(0, 0, 0, 0.250);
     margin:0 auto;
-    border: 1px solid black;
+    border: 5px solid goldenrod;
 }
 
 .dati-utente h3{
     text-align: center;
     padding-top: 20px;
+    color: goldenrod;
 }
 
 .row{
     display: flex;
+    justify-content: center;
 }
 
 .second{
@@ -37,9 +57,10 @@
 
 
 .col{
-    border:1px solid black; 
+    border:1px solid goldenrod; 
     text-align: center;
     margin:5px;
+    background-color: rgba(0, 0, 0, 0.250);
 }
 
 .bottom{
@@ -48,8 +69,9 @@
 .col_bottom{
     width: 150px;
     height:120px;
-    border:1px solid rgb(27, 195, 103);
+    border:1px solid goldenrod;
     margin:0 5px;
     text-align: center;
-    padding:2px
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.250);
 }
